@@ -1,18 +1,9 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+//we are loading the templatess from the controller, not directly from the blade templates
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//indexcontroller
 Route::get('/' , 'index@index');
+
+//generic controller 
 Route::get('/generic' , 'generic@index');
